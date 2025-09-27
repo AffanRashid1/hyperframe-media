@@ -23,7 +23,7 @@ const servicesData = [
       "Manage scheduling & promotion",
       "Post-interview repurposing (clips, quotes, snippets)",
     ],
-    redirectUrl: "/podcast-services",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "💻",
@@ -37,7 +37,7 @@ const servicesData = [
       "Easy-to-manage platforms",
       "Press features & multimedia integration",
     ],
-    redirectUrl: "/website-development",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "🤖",
@@ -51,7 +51,7 @@ const servicesData = [
       "Draft blogs & social content",
       "Analytics on conversations & engagement",
     ],
-    redirectUrl: "/ai-agents",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "📰",
@@ -65,7 +65,7 @@ const servicesData = [
       "Media strategy & alignment with goals",
       "Full reporting with clippings",
     ],
-    redirectUrl: "/publications",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "📱",
@@ -79,7 +79,7 @@ const servicesData = [
       "Targeting to grow authentic followers",
       "Detailed analytics & reports",
     ],
-    redirectUrl: "/social-media-marketing",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "🎬",
@@ -107,7 +107,7 @@ const servicesData = [
       "Campaigns for launches & awareness",
       "Photo & video documentation",
     ],
-    redirectUrl: "/billboard-marketing",
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "📚",
@@ -135,7 +135,7 @@ const servicesData = [
       "Guaranteed media placements",
       "Reporting on reach & coverage",
     ],
-    redirectUrl: "/pr-releases",
+    redirectUrl: "/imdb-services",
   },
 ];
 
@@ -176,6 +176,7 @@ const ServicesSection = () => {
           {servicesData.map((service, i) => (
             <motion.div
               key={i}
+              className="cursor-pointer"
               onClick={() => {
                 router.push(service.redirectUrl);
               }}
