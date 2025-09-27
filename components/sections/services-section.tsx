@@ -7,6 +7,7 @@ import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 // Sare services ka data yahan rakhenge
 const servicesData = [
@@ -22,6 +23,7 @@ const servicesData = [
       "Manage scheduling & promotion",
       "Post-interview repurposing (clips, quotes, snippets)",
     ],
+    redirectUrl: "/podcast-services",
   },
   {
     icon: "💻",
@@ -35,6 +37,7 @@ const servicesData = [
       "Easy-to-manage platforms",
       "Press features & multimedia integration",
     ],
+    redirectUrl: "/website-development",
   },
   {
     icon: "🤖",
@@ -48,6 +51,7 @@ const servicesData = [
       "Draft blogs & social content",
       "Analytics on conversations & engagement",
     ],
+    redirectUrl: "/ai-agents",
   },
   {
     icon: "📰",
@@ -61,6 +65,7 @@ const servicesData = [
       "Media strategy & alignment with goals",
       "Full reporting with clippings",
     ],
+    redirectUrl: "/publications",
   },
   {
     icon: "📱",
@@ -74,6 +79,7 @@ const servicesData = [
       "Targeting to grow authentic followers",
       "Detailed analytics & reports",
     ],
+    redirectUrl: "/social-media-marketing",
   },
   {
     icon: "🎬",
@@ -87,6 +93,7 @@ const servicesData = [
       "Upload high-quality headshots",
       "Ongoing monitoring & updates",
     ],
+    redirectUrl: "/imdb-services",
   },
   {
     icon: "📊",
@@ -100,6 +107,7 @@ const servicesData = [
       "Campaigns for launches & awareness",
       "Photo & video documentation",
     ],
+    redirectUrl: "/billboard-marketing",
   },
   {
     icon: "📚",
@@ -113,6 +121,7 @@ const servicesData = [
       "Monitor & prevent misinformation",
       "Keep updated with new milestones",
     ],
+    redirectUrl: "/wikipedia-services",
   },
   {
     icon: "📢",
@@ -126,14 +135,16 @@ const servicesData = [
       "Guaranteed media placements",
       "Reporting on reach & coverage",
     ],
+    redirectUrl: "/pr-releases",
   },
 ];
 
 const ServicesSection = () => {
+  const router = useRouter();
   return (
     <section
       id="features"
-      className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden"
+      className="relative w-full pt-12 md:pt-24 lg:pt-32 bg-muted/30 overflow-hidden"
     >
       {/* Background Animation */}
       <AnimatedBackground
@@ -160,37 +171,40 @@ const ServicesSection = () => {
         </ScrollReveal>
 
         {/* Services Grid */}
-        <ParallaxScroll baseVelocity={0.2} direction="up" className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {servicesData.map((service, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1, duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <Card className="h-full border border-gray-200/30 bg-white/80 dark:bg-black/40 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="text-4xl">{service.icon}</div>
-                    <h3 className="text-xl font-semibold">{service.title}</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {service.subtitle}
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">
-                      {service.description}
-                    </p>
-                    <ul className="list-disc list-inside text-sm text-gray-500 dark:text-gray-400 space-y-1">
-                      {service.points.map((point, idx) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </ParallaxScroll>
+        {/* <ParallaxScroll baseVelocity={0.2} direction="up" className="pt-12"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-4 pb-16">
+          {servicesData.map((service, i) => (
+            <motion.div
+              key={i}
+              onClick={() => {
+                router.push(service.redirectUrl);
+              }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border border-gray-200/30 bg-white/80 dark:bg-black/40 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-6 space-y-4">
+                  <div className="text-4xl">{service.icon}</div>
+                  <h3 className="text-xl font-semibold">{service.title}</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {service.subtitle}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    {service.description}
+                  </p>
+                  <ul className="list-disc list-inside text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                    {service.points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+        {/* </ParallaxScroll> */}
       </div>
     </section>
   );

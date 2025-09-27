@@ -22,9 +22,9 @@ const navItems = [
   // { name: "Blog", href: "#blog" },
   // { name: "FAQ", href: "#faq" },
   { name: "Services", href: "/services" },
-  { name: "Books", href: "/books" },
-  { name: "About", href: "/about" },
-  { name: "Activities & Fun", href: "/activities" },
+  // { name: "Books", href: "/books" },
+  // { name: "About", href: "/about" },
+  // { name: "Activities & Fun", href: "/activities" },
 ];
 
 export function SiteHeader() {
@@ -50,7 +50,7 @@ export function SiteHeader() {
           : "bg-transparent"
       )}
     >
-      <div className="container px-4 md:px-6 flex h-16 items-center justify-between">
+      <div className="container px-20 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 z-10">
           {/* <Icons.logo className="h-6 w-6" /> */}
           <span className="font-heading text-xl tracking-tight">

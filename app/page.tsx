@@ -32,7 +32,7 @@ export default function HomePage() {
       {/* <PricingSection /> */}
       {/* <BlogSection /> */}
       {/* <FaqSection /> */}
-      <CtaSection />
+      {/* <CtaSection /> */}
     </main>
   );
 }

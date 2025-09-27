@@ -4,188 +4,74 @@ import { ScrollToTopButton } from "@/components/scroll-to-top-button";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t bg-background/80 backdrop-blur-lg">
-      <div className="container flex flex-col gap-10 py-16">
-        <div className="flex flex-col gap-10 md:flex-row">
-          <div className="flex flex-1 flex-col md:flex-row justify-between gap-4">
-            <div className="flex flex-col gap-2">
-              <Link href="/" className="flex items-center gap-2">
-                {/* <Icons.logo className="h-6 w-6" /> */}
-                <span className="font-heading text-xl tracking-tight">
-                  Hyperframe Media
-                </span>
-              </Link>
-              <p className="text-muted-foreground max-w-sm opacity-70">
-                Welcome to the world of Adventures Down Under!
-              </p>
-            </div>
-
-            <div className="flex gap-4">
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer"
-                className="glassmorphic-icon"
-              >
-                <Icons.twitter className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noreferrer"
-                className="glassmorphic-icon"
-              >
-                <Icons.gitHub className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link
-                href="https://discord.com"
-                target="_blank"
-                rel="noreferrer"
-                className="glassmorphic-icon"
-              >
-                <Icons.discord className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">Discord</span>
-              </Link>
-            </div>
+    <>
+      <footer className="border-t bg-black backdrop-blur-lg">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-20">
+          {/* Logo and Site Name */}
+          <div className="flex items-center gap-2">
+            {/* <Icons.logo className="h-5 w-5" /> */}
+            <span className="font-semibold text-sm uppercase tracking-wide">
+              Hypermedia Frame
+            </span>
           </div>
-          {/* <div className="grid flex-1 grid-cols-2 gap-10 sm:grid-cols-3">
-            <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium tracking-tight">Product</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <Link
-                    href="#features"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#pricing"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#components"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Components
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#changelog"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Changelog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium tracking-tight">Company</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <Link
-                    href="#about"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#blog"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#careers"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#contact"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium tracking-tight">Legal</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <Link
-                    href="#privacy"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#terms"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Terms
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#cookies"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Cookies
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#licenses"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Licenses
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-        </div>
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-center text-muted-foreground opacity-70">
-            &copy; {new Date().getFullYear()} Hyperframe Media. All rights
-            reserved.
-          </p>
-          {/* <div className="flex gap-4">
+
+          {/* Navigation Links */}
+          <div className="flex gap-6 mt-4 md:mt-0 text-sm text-muted-foreground">
             <Link
-              href="#terms"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+              href="#about"
+              className="hover:text-foreground transition-colors"
             >
-              Terms
+              About Us
             </Link>
             <Link
-              href="#privacy"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+              href="#services"
+              className="hover:text-foreground transition-colors"
             >
-              Privacy
+              Services
             </Link>
-          </div> */}
+            <Link
+              href="#contact"
+              className="hover:text-foreground transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-4 md:mt-0">
+            <Link
+              href="https://youtube.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Icons.youtube className="h-4 w-4" />
+              <span className="sr-only">YouTube</span>
+            </Link>
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Icons.twitter className="h-4 w-4" />
+              <span className="sr-only">Twitter</span>
+            </Link>
+            <Link
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Icons.gitHub className="h-4 w-4" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+          </div>
         </div>
-      </div>
+      </footer>
+
+      {/* ScrollToTop should be here */}
       <ScrollToTopButton />
-    </footer>
+    </>
   );
 }

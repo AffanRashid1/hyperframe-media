@@ -1,185 +1,88 @@
 "use client";
-import { Code, Layers, Palette, Sparkles, Zap, Shield } from "lucide-react";
 
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { ScrollReveal } from "@/components/scroll-reveal";
-import { GlowingTiltCard } from "@/components/ui/glowing-tilt-card";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
-import { AnimatedText } from "@/components/ui/animated-text";
-import { AnimatedBackground } from "@/components/ui/animated-background";
-import { ProgressCard } from "@/components/ui-library/cards/progress-card";
-import Image from "next/image";
+  Clapperboard,
+  BookText,
+  Newspaper,
+  Facebook,
+  Megaphone,
+  MonitorSmartphone,
+} from "lucide-react";
 
 export function FeaturesSection() {
-  const features = [
+  const iconColor = "#facc15"; // Yellow-400
+  const iconSize = 48;
+
+  const services = [
     {
-      icon: <Layers className="h-10 w-10 text-red-500" />,
-      title: "Composable Components",
+      title: "IMDb Services",
       description:
-        "Build complex UIs with our composable and reusable component library.",
-      progress: 100,
-      borderClass: "border-glow-red",
+        "List and update IMDb pages for actors, filmmakers, and creatives.",
+      icon: <Clapperboard size={iconSize} color={iconColor} />,
     },
     {
-      icon: <Palette className="h-10 w-10 text-blue-500" />,
-      title: "Customizable Themes",
+      title: "Wikipedia",
       description:
-        "Easily customize colors, fonts, and styles to match your brand identity.",
-      progress: 90,
-      borderClass: "border-glow-blue",
+        "Create and manage Wikipedia entries with adherence to guidelines.",
+      icon: <BookText size={iconSize} color={iconColor} />,
     },
     {
-      icon: <Zap className="h-10 w-10 text-yellow-500" />,
-      title: "Performance Optimized",
-      description:
-        "Lightweight components designed for optimal performance and loading times.",
-      progress: 95,
-      borderClass: "border-glow-yellow",
+      title: "High and LowTier Publications",
+      description: "Feature in top media outlets and niche platforms.",
+      icon: <Newspaper size={iconSize} color={iconColor} />,
     },
     {
-      icon: <Code className="h-10 w-10 text-green-500" />,
-      title: "TypeScript Ready",
-      description:
-        "Fully typed components for better developer experience and fewer bugs.",
-      progress: 100,
-      borderClass: "border-glow-green",
+      title: "Marketing (Facebook and Instagram)",
+      description: "Develop and execute effective advertising campaigns.",
+      icon: <Facebook size={iconSize} color={iconColor} />,
     },
     {
-      icon: <Sparkles className="h-10 w-10 text-purple-500" />,
-      title: "Interactive Animations",
-      description:
-        "Beautiful animations and transitions powered by Framer Motion.",
-      progress: 85,
-      borderClass: "border-glow-purple",
+      title: "PR Releases",
+      description: "Craft and distribute public relations content.",
+      icon: <Megaphone size={iconSize} color={iconColor} />,
     },
     {
-      icon: <Shield className="h-10 w-10 text-orange-500" />,
-      title: "Accessibility First",
-      description:
-        "Fully accessible components that work for all users and comply with WCAG standards.",
-      progress: 92,
-      borderClass: "border-glow-orange",
+      title: "Website Development",
+      description: "Design and build professional, responsive websites.",
+      icon: <MonitorSmartphone size={iconSize} color={iconColor} />,
     },
   ];
 
   return (
-    <section
-      id="features"
-      className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden"
-    >
-      <AnimatedBackground
-        variant="gradient"
-        color="#101823"
-        secondaryColor="rgba(75, 85, 99, 0.08)"
-      />
+    <section className="bg-[#0a0f1a] py-20 px-4 w-full">
+      <div className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <h2 className="text-white text-4xl font-bold text-center mb-4">
+          Grow Your Online Presence with Hyperframe Media
+        </h2>
+        <p className="text-gray-400 text-center text-lg max-w-2xl mx-auto mb-12">
+          IMDb, Wikipedia, PR, Marketing & More — Everything you need to build
+          credibility and visibility.
+        </p>
 
-      <div className="container px-6 md:px-8">
-        <ScrollReveal>
-          <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
-            <div className="space-y-4">
-              <AnimatedText
-                text="The Books / Adventures"
-                variant="heading"
-                className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl gradient-text"
-                animation="slide"
-              />
-              {/* <AnimatedText
-                text="Our component library provides everything you need to build beautiful, interactive, and accessible web applications."
-                variant="paragraph"
-                className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
-                animation="fade"
-                delay={0.3}
-              /> */}
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {services.map((service, i) => (
+            <div
+              key={i}
+              className="bg-[#111827] border border-yellow-400 rounded-xl p-6 text-center shadow-md hover:shadow-[0_0_30px_rgba(255,255,0,0.2)] transition-all"
+            >
+              <div className="mb-4 flex justify-center">{service.icon}</div>
+              <h3 className="text-white text-xl font-semibold mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-400 text-sm">{service.description}</p>
             </div>
-          </div>
-        </ScrollReveal>
+          ))}
+        </div>
 
-        <ParallaxScroll baseVelocity={0.1} direction="up" className="py-12">
-          <div className="mx-auto space-y-24">
-            {adventuresData.map((adventure, index) => (
-              <ScrollReveal>
-                <div
-                  key={adventure.title}
-                  className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-                >
-                  {/* Text Content */}
-                  <div
-                    className={`space-y-6 ${
-                      index % 2 === 0 ? "md:order-1" : "md:order-2"
-                    } order-2`}
-                  >
-                    <h3 className="text-2xl font-bold font-cinzel text-yellow-400">
-                      {adventure.title}
-                    </h3>
-                    <div className="calligraphy">
-                      <p className="text-gray-300 text-justify leading-8">
-                        {adventure.description}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Image Content */}
-                  <div
-                    className={`flex justify-center ${
-                      index % 2 === 0 ? "md:order-2" : "md:order-1"
-                    } order-1`}
-                  >
-                    <div className="relative w-64 h-64 md:w-80 md:h-80">
-                      {/* Decorative frames */}
-                      <div className="absolute inset-0 border rounded-md border-yellow-800/30"></div>
-                      {/* <div className="absolute inset-0 transform translate-x-4 translate-y-4 border border-yellow-800/30"></div> */}
-
-                      {/* Image */}
-                      <div className="absolute inset-0">
-                        <Image
-                          alt={adventure.title}
-                          src={adventure.imageSrc}
-                          width={600}
-                          height={800}
-                          className="object-cover w-full h-full  transition-all duration-500"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </ParallaxScroll>
+        {/* Button */}
+        <div className="text-center mt-14">
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-md transition-all shadow-md">
+            Get Started Today
+          </button>
+        </div>
       </div>
     </section>
   );
 }
-
-const adventuresData = [
-  {
-    title: "Mini-Wonderland: Land of the Kangaroo",
-    description:
-      "Meet Ellie, your energetic kangaroo guide! She’ll take you on a bouncing journey through meadows and creeks, teaching you the joy of friendship, exploration, and courage.",
-    imageSrc: "./kangroo.jpeg", // <-- REPLACE WITH YOUR IMAGE PATH
-  },
-  {
-    title: "In the Canopy: Wisdom of the Koala",
-    description:
-      "Kevin the Koala shares gentle wisdom about caring for the environment, community, and each other. His calm spirit helps children discover the importance of balance and conservation.",
-    imageSrc: "./koalaa.jpeg", // <-- REPLACE WITH YOUR IMAGE PATH
-  },
-  {
-    title: "The Whimsical Ways of the Witty Emu",
-    description:
-      "Laugh out loud with Eric the emu! With his comical dances and funny antics, Eric shows children the value of humor, joy, and positivity in building friendships.",
-    imageSrc: "./a.jpeg", // <-- REPLACE WITH YOUR IMAGE PATH
-  },
-  {
-    title: "Mask and Tradition: Aboriginal Stories",
-    description:
-      "Journey into the Dreamtime with stories passed down through generations. Learn about the Rainbow Serpent, Uluru, and the sacred wisdom of Australia’s First Peoples.",
-    imageSrc: "./kangro-anim.jpeg", // <-- REPLACE WITH YOUR IMAGE PATH
-  },
-];

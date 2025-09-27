@@ -22,9 +22,9 @@ import {
   User,
   X,
   type LucideIcon,
-} from "lucide-react"
+} from "lucide-react";
 
-export type Icon = LucideIcon
+export type Icon = LucideIcon;
 
 export const Icons = {
   logo: Command,
@@ -79,6 +79,23 @@ export const Icons = {
       />
     </svg>
   ),
+  youtube: ({ ...props }) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 576 512"
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fab"
+      data-icon="youtube"
+      role="img"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M549.655 124.083c-6.281-23.65-24.771-42.217-48.436-48.557C458.859 64 288 64 288 64s-170.86 0-213.218 11.526c-23.666 6.34-42.155 24.907-48.436 48.557C16 167.478 16 256 16 256s0 88.522 10.346 131.917c6.281 23.65 24.77 42.217 48.436 48.557C117.14 448 288 448 288 448s170.859 0 213.218-11.526c23.665-6.34 42.155-24.907 48.436-48.557C560 344.522 560 256 560 256s0-88.522-10.345-131.917zM232 336V176l142.745 80L232 336z"
+      />
+    </svg>
+  ),
   discord: ({ ...props }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -100,4 +117,4 @@ export const Icons = {
   file: File,
   fileText: FileText,
   image: ImageIcon,
-}
+};
