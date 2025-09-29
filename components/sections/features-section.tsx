@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export function FeaturesSection() {
-  const iconColor = "#facc15"; // Yellow-400
+  const iconColor = "#535353"; // Yellow-400
   const iconSize = 48;
 
   const services = [
@@ -49,7 +49,7 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section className="bg-[#0a0f1a] py-20 px-4 w-full">
+    <section className=" bg-muted/30  py-20 px-4 w-full">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-white text-4xl font-bold text-center mb-4">
@@ -65,7 +65,7 @@ export function FeaturesSection() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-[#111827] border border-yellow-400 rounded-xl p-6 text-center shadow-md hover:shadow-[0_0_30px_rgba(255,255,0,0.2)] transition-all"
+              className="dark:bg-black/40 border border-gray-200/30 rounded-xl p-6 text-center shadow-md hover:shadow-gray-200/30 transition-all"
             >
               <div className="mb-4 flex justify-center">{service.icon}</div>
               <h3 className="text-white text-xl font-semibold mb-2">
@@ -78,7 +78,7 @@ export function FeaturesSection() {
 
         {/* Button */}
         <div className="text-center mt-14">
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-md transition-all shadow-md">
+          <button className="bg-gray-200/30  hover:bg-gray-200/50 text-white font-semibold px-8 py-3 rounded-md transition-all shadow-md border border-white">
             Get Started Today
           </button>
         </div>

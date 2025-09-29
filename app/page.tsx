@@ -8,6 +8,7 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { MouseGlow } from "@/components/ui-library/effects/mouse-glow";
 import About from "@/components/sections/about";
+import ServicesSection from "@/components/sections/services-section";
 
 export default function HomePage() {
   return (
@@ -25,8 +26,10 @@ export default function HomePage() {
       />
 
       <HeroSection />
-      <About />
+      {/* <About /> */}
+      <ServicesSection />
       <FeaturesSection />
+
       {/* <ComponentLibraryShowcase /> */}
       {/* <TestimonialsSection /> */}
       {/* <PricingSection /> */}

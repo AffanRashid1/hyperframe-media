@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { bg2, business5 } from "../assets";
+import BlurText from "../blur-text";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,29 +27,56 @@ const itemVariants = {
 export function HeroSection() {
   return (
     <section
-      className="relative w-full text-white py-20 bg-cover bg-center"
-      style={{ backgroundImage: `url(${bg2.src})` }}
+      className="overflow-hidden relative w-full flex justify-center items-center text-white py-20 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${bg2.src})`,
+        height: "calc(100vh - 80px)",
+      }}
     >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{
+          opacity: [0.3, 0.5, 0.3],
+          scale: [0.9, 1.1, 0.9],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute top-5 z-10 -left-[150px] -translate-x-1/2 -translate-y-1/2 
+      w-[500px] h-[500px] rounded-full 
+      bg-gradient-to-r from-gray-500 to-bg-gray-200/30 
+      blur-3xl pointer-events-none"
+      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{
+          opacity: [0.3, 0.5, 0.3],
+          scale: [0.9, 1.1, 0.9],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute top-5 z-10 -right-[150px] -translate-x-1/2 -translate-y-1/2 
+      w-[500px] h-[500px] rounded-full 
+      bg-gradient-to-r from-gray-500 to-bg-gray-200/30 
+      blur-3xl pointer-events-none"
+      />
+
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+      w-[500px] h-[500px] rounded-full 
+      bg-gray-200/30 blur-3xl pointer-events-none"
+      />
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
+        <div className="flex justify-center items-center">
           {/* Left Side Image */}
-          <motion.div
-            className="relative w-full h-[320px] lg:h-[420px] rounded-lg overflow-hidden shadow-lg"
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <Image
-              src={business5.src}
-              alt="Business Professionals"
-              fill
-              className="object-cover"
-              priority
-            />
-          </motion.div>
 
           {/* Right Side Content */}
           <motion.div
@@ -58,25 +86,48 @@ export function HeroSection() {
             animate="visible"
           >
             {/* Heading */}
-            <motion.h2
+            {/* <motion.h2
               className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
               variants={itemVariants}
             >
               Establish Your Authority. <br />
               <span className="text-white">Build Your Legacy</span>
-            </motion.h2>
-
+            </motion.h2> */}
+            <BlurText
+              text={"Your Brand."}
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight text-center"
+              onAnimationComplete={() => console.log("done")}
+            />
+            <BlurText
+              text={"Everywhere It Matters."}
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight text-center"
+              onAnimationComplete={() => console.log("done")}
+            />
+            <BlurText
+              text={
+                "Navigate the world’s knowledge. Wikipedia creation & management"
+              }
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-lg leading-tight text-center"
+              onAnimationComplete={() => console.log("done")}
+            />
             {/* Subtitle Section */}
-            <motion.div
+            {/* <motion.div
               className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
               variants={itemVariants}
             >
-              {/* Wikipedia Services (yellow) */}
               <span className="text-yellow-400 font-semibold text-lg sm:text-xl whitespace-nowrap">
                 Wikipedia Services
               </span>
 
-              {/* Globe Icon */}
               <svg
                 width="40"
                 height="40"
@@ -110,15 +161,14 @@ export function HeroSection() {
                 ></path>
               </svg>
 
-              {/* Subtext */}
               <span className="text-gray-300 text-sm sm:text-base leading-relaxed sm:leading-normal max-w-md">
                 Navigate the world’s knowledge. Wikipedia creation &amp;
                 management
               </span>
-            </motion.div>
+            </motion.div> */}
 
             {/* CTA Button */}
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <Link
                 href="#"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-600 transition"
@@ -126,8 +176,23 @@ export function HeroSection() {
                 Get Started Today
                 <ArrowRight className="h-5 w-5" />
               </Link>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
+
+          {/* <motion.div
+            className="relative w-full h-[320px] lg:h-[420px] rounded-lg overflow-hidden shadow-lg"
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Image
+              src={business5.src}
+              alt="Business Professionals"
+              fill
+              className="object-cover"
+              priority
+            />
+          </motion.div> */}
         </div>
       </div>
     </section>

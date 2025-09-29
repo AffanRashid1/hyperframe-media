@@ -6,10 +6,10 @@ import { AnimatedText } from "@/components/ui/animated-text";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import AOS from "aos";
 
-// Sare services ka data yahan rakhenge
 const servicesData = [
   {
     icon: "🎙️",
@@ -141,6 +141,15 @@ const servicesData = [
 
 const ServicesSection = () => {
   const router = useRouter();
+
+  useEffect(() => {
+    AOS.init({
+      // duration: 800, // animation duration
+      // once: true,    // whether animation should happen only once
+      // easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section
       id="features"
@@ -174,16 +183,17 @@ const ServicesSection = () => {
         {/* <ParallaxScroll baseVelocity={0.2} direction="up" className="pt-12"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-4 pb-16">
           {servicesData.map((service, i) => (
-            <motion.div
+            <div
               key={i}
               className="cursor-pointer"
               onClick={() => {
                 router.push(service.redirectUrl);
               }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1, duration: 0.6 }}
-              viewport={{ once: true }}
+              data-aos="fade-up"
+              // initial={{ opacity: 0, y: 50 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ delay: i * 0.1, duration: 0.6 }}
+              // viewport={{ once: true }}
             >
               <Card className="h-full border border-gray-200/30 bg-white/80 dark:bg-black/40 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-6 space-y-4">
@@ -202,7 +212,7 @@ const ServicesSection = () => {
                   </ul>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
         {/* </ParallaxScroll> */}
