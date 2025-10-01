@@ -9,6 +9,7 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { MouseGlow } from "@/components/ui-library/effects/mouse-glow";
 import About from "@/components/sections/about";
 import ServicesSection from "@/components/sections/services-section";
+import Contact from "@/components/Contact";
 
 export default function HomePage() {
   return (
@@ -29,6 +30,9 @@ export default function HomePage() {
       {/* <About /> */}
       <ServicesSection />
       <FeaturesSection />
+      <div className="bg-muted/30 w-full">
+        <Contact />
+      </div>
 
       {/* <ComponentLibraryShowcase /> */}
       {/* <TestimonialsSection /> */}
