@@ -10,6 +10,7 @@ import { MouseGlow } from "@/components/ui-library/effects/mouse-glow";
 import About from "@/components/sections/about";
 import ServicesSection from "@/components/sections/services-section";
 import Contact from "@/components/Contact";
+import LogoLoop from "@/components/LogoLoop/logoloop";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,18 @@ export default function HomePage() {
 
       <HeroSection />
       {/* <About /> */}
+      {/* <LogoLoop
+        logos={techLogos}
+        speed={120}
+        direction="left"
+        logoHeight={48}
+        gap={40}
+        pauseOnHover
+        scaleOnHover
+        fadeOut
+        fadeOutColor="#ffffff"
+        ariaLabel="Technology partners"
+      /> */}
       <ServicesSection />
       <FeaturesSection />
       <div className="bg-muted/30 w-full">
