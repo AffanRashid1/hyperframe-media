@@ -30,7 +30,7 @@ export function HeroSection() {
       className="overflow-hidden relative w-full flex justify-center items-center text-white py-20 bg-cover bg-center"
       style={{
         backgroundImage: `url(${bg2.src})`,
-        height: "calc(100vh - 80px)",
+        height: "calc(100vh - 10px)",
       }}
     >
       <motion.div

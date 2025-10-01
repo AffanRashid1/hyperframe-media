@@ -258,6 +258,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
           "logoloop",
           fadeOut && "logoloop--fade",
           scaleOnHover && "logoloop--scale-hover",
+          "bg-muted/30",
           className,
         ]
           .filter(Boolean)

@@ -1,3 +1,5 @@
+"use client";
+
 import { HeroSection } from "@/components/sections/hero-section";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { ComponentLibraryShowcase } from "@/components/sections/component-library-showcase";
@@ -11,10 +13,25 @@ import About from "@/components/sections/about";
 import ServicesSection from "@/components/sections/services-section";
 import Contact from "@/components/Contact";
 import LogoLoop from "@/components/LogoLoop/logoloop";
+import { DiscAlbum, Globe } from "lucide-react";
+import CountUp from "@/components/CountUp/CountUp";
+import StatsSection from "@/components/sections/stats-section";
+import SplashCursor from "@/components/SplashCursor/spplash-cursor";
 
 export default function HomePage() {
+  const techLogos = [
+    { src: "./company-white.png", title: "React", href: "https://react.dev" },
+    // {
+    //   node: <DiscAlbum size={60} />,
+    //   title: "Next.js",
+    //   href: "https://nextjs.org",
+    // },
+    // { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+    // { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  ];
+
   return (
-    <main className="flex flex-col items-center relative">
+    <main className="flex flex-col items-center relative bg-muted/30">
       {/* Enhanced global cursor effect with subtle red glow */}
       <MouseGlow
         color="rgba(18, 18, 23, 0.95)"
@@ -29,6 +46,20 @@ export default function HomePage() {
 
       <HeroSection />
       {/* <About /> */}
+      <LogoLoop
+        logos={techLogos}
+        speed={120}
+        direction="left"
+        logoHeight={48}
+        gap={40}
+        pauseOnHover
+        scaleOnHover
+        fadeOut
+        fadeOutColor="#141313"
+        ariaLabel="Technology partners"
+        style={{ paddingTop: "40px" }}
+      />
+
       {/* <LogoLoop
         logos={techLogos}
         speed={120}
@@ -42,6 +73,8 @@ export default function HomePage() {
         ariaLabel="Technology partners"
       /> */}
       <ServicesSection />
+      <StatsSection />
+
       <FeaturesSection />
       <div className="bg-muted/30 w-full">
         <Contact />
@@ -53,6 +86,7 @@ export default function HomePage() {
       {/* <BlogSection /> */}
       {/* <FaqSection /> */}
       {/* <CtaSection /> */}
+      <SplashCursor />
     </main>
   );
 }
