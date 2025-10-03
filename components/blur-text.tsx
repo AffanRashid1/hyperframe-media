@@ -102,7 +102,7 @@ const BlurText = ({
         return (
           <motion.span
             key={index}
-            className="inline-block will-change-[transform,filter,opacity]"
+            className="inline-block will-change-[transform,filter,opacity] leading-[80px]"
             initial={fromSnapshot}
             whileInView={animateKeyframes}
             transition={spanTransition}
@@ -129,4 +129,4 @@ const BlurText = ({
 
 export default BlurText;
 
-let highlightedWords = ["brand."];
+let highlightedWords = ["hyperframe", "media"];

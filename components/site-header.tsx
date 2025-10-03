@@ -23,7 +23,7 @@ const navItems = [
   // { name: "FAQ", href: "#faq" },
   { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
-  // { name: "About", href: "/about" },
+  { name: "About", href: "/about" },
   // { name: "Activities & Fun", href: "/activities" },
 ];
 
@@ -65,7 +65,7 @@ export function SiteHeader() {
             <Link
               key={item.name}
               href={item.href}
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className="px-3 py-2 text-lg font-medium text-foreground hover:text-foreground transition-colors relative group"
               // onClick={(e) => {
               //   e.preventDefault();
               //   document.querySelector(item.href)?.scrollIntoView({

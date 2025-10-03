@@ -86,7 +86,6 @@ export default function HomePage() {
       {/* <BlogSection /> */}
       {/* <FaqSection /> */}
       {/* <CtaSection /> */}
-      <SplashCursor />
     </main>
   );
 }

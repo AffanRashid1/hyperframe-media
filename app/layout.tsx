@@ -10,6 +10,7 @@ import { PageTransition } from "@/components/page-transition";
 
 import "@/app/globals.css";
 import { Suspense } from "react";
+import SplashCursor from "@/components/SplashCursor/spplash-cursor";
 
 // Use only Google Fonts to avoid any local font references
 const fontSans = Inter({
@@ -63,6 +64,7 @@ export default function RootLayout({
           <div>
             <Suspense>
               <div className="flex-1">{children}</div>
+              <SplashCursor />
             </Suspense>
           </div>
           <SiteFooter />

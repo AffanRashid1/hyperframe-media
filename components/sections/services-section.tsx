@@ -23,7 +23,7 @@ const servicesData = [
       "Manage scheduling & promotion",
       "Post-interview repurposing (clips, quotes, snippets)",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/podcast-and-interviews",
   },
   {
     icon: "💻",
@@ -37,7 +37,7 @@ const servicesData = [
       "Easy-to-manage platforms",
       "Press features & multimedia integration",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/website-development",
   },
   {
     icon: "🤖",
@@ -51,7 +51,7 @@ const servicesData = [
       "Draft blogs & social content",
       "Analytics on conversations & engagement",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/ai-agents",
   },
   {
     icon: "📰",
@@ -65,7 +65,7 @@ const servicesData = [
       "Media strategy & alignment with goals",
       "Full reporting with clippings",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/media-publications",
   },
   {
     icon: "📱",
@@ -79,7 +79,7 @@ const servicesData = [
       "Targeting to grow authentic followers",
       "Detailed analytics & reports",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/social-media-marketing",
   },
   {
     icon: "🎬",
@@ -93,7 +93,7 @@ const servicesData = [
       "Upload high-quality headshots",
       "Ongoing monitoring & updates",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/imdb-services",
   },
   {
     icon: "📊",
@@ -107,7 +107,7 @@ const servicesData = [
       "Campaigns for launches & awareness",
       "Photo & video documentation",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/billboard-marketing",
   },
   {
     icon: "📚",
@@ -121,7 +121,7 @@ const servicesData = [
       "Monitor & prevent misinformation",
       "Keep updated with new milestones",
     ],
-    redirectUrl: "/wikipedia-services",
+    redirectUrl: "/services/wikipedia-services",
   },
   {
     icon: "📢",
@@ -135,7 +135,7 @@ const servicesData = [
       "Guaranteed media placements",
       "Reporting on reach & coverage",
     ],
-    redirectUrl: "/imdb-services",
+    redirectUrl: "/services/pr-releases",
   },
 ];
 

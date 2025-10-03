@@ -29,7 +29,7 @@ export function HeroSection() {
     <section
       className="overflow-hidden relative w-full flex justify-center items-center text-white py-20 bg-cover bg-center"
       style={{
-        backgroundImage: `url(${bg2.src})`,
+        backgroundImage: `url(./hero-bg.png)`,
         height: "calc(100vh - 10px)",
       }}
     >
@@ -69,10 +69,10 @@ export function HeroSection() {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
       w-[500px] h-[500px] rounded-full 
-      bg-gray-200/30 blur-3xl pointer-events-none"
+      bg-black/30 blur-3xl pointer-events-none"
       />
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex justify-center items-center">
@@ -94,29 +94,21 @@ export function HeroSection() {
               <span className="text-white">Build Your Legacy</span>
             </motion.h2> */}
             <BlurText
-              text={"Your Brand."}
+              text={"Grow Your Online Presence with Hyperframe Media"}
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight text-center"
-              onAnimationComplete={() => console.log("done")}
-            />
-            <BlurText
-              text={"Everywhere It Matters."}
-              delay={150}
-              animateBy="words"
-              direction="top"
-              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight text-center"
+              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-[200px] text-center"
               onAnimationComplete={() => console.log("done")}
             />
             <BlurText
               text={
-                "Navigate the world’s knowledge. Wikipedia creation & management"
+                "Everything you need to build credibility and visibility — from PR to Wikipedia, IMDb and more."
               }
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-lg leading-tight text-center"
+              className="text-2xl  text-center"
               onAnimationComplete={() => console.log("done")}
             />
             {/* Subtitle Section */}
@@ -168,15 +160,17 @@ export function HeroSection() {
             </motion.div> */}
 
             {/* CTA Button */}
-            {/* <motion.div variants={itemVariants}>
-              <Link
-                href="#"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-600 transition"
-              >
-                Get Started Today
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </motion.div> */}
+            <div className="flex justify-center items-center w-full">
+              <motion.div variants={itemVariants}>
+                <Link
+                  href="#"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black text-xl font-semibold rounded-md hover:bg-yellow-600 transition"
+                >
+                  Get Started Today
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </motion.div>
+            </div>
           </motion.div>
 
           {/* <motion.div

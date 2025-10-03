@@ -8,13 +8,15 @@ export default function ImdbProServices() {
       <div className="w-full max-w-6xl px-6 mt-20 mb-12 text-left">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Hypermedia Frame –{" "}
-          <span className="text-yellow-400">IMDb Pro Services</span>
+          <span className="text-yellow-400">IMDb Services</span>
         </h1>
         <p className="text-gray-300 max-w-3xl leading-relaxed">
-          At Hypermedia Frame, we understand the power of information and
-          connectivity in the entertainment industry. Our IMDb Pro services are
-          designed to provide you with the tools and insights to advance your
-          career or project.
+          Your IMDb page is often the first impression casting directors,
+          producers, and fans get of your work. At Hypermedia Frame, we
+          specialize in creating, updating, and optimizing IMDb profiles for
+          actors, filmmakers, musicians, and other creatives. Our goal is to
+          ensure your page accurately reflects your achievements and enhances
+          your professional reputation.
         </p>
       </div>
 
@@ -24,7 +26,7 @@ export default function ImdbProServices() {
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
             src={business1}
-            alt="IMDB Pro Services"
+            alt="IMDB Services"
             width={600}
             height={400}
             className="w-full h-full object-cover"
@@ -37,10 +39,10 @@ export default function ImdbProServices() {
           <p className="text-gray-300 leading-relaxed">
             Whether you're an{" "}
             <span className="font-semibold text-white">
-              actor, director, producer,
+              actor, filmmaker, musician,
             </span>
-            or part of a casting team, our tailored solutions will help you
-            maximize your presence and reach on IMDb Pro.
+            or creative professional, our tailored solutions will help you build
+            a powerful, accurate, and discoverable presence on IMDb.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
             Get Started Today
@@ -50,12 +52,11 @@ export default function ImdbProServices() {
 
       {/* Why IMDb Pro */}
       <div className="max-w-4xl px-6 mb-20 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Why IMDb Pro?</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">What We Do</h2>
         <p className="text-gray-300 leading-relaxed">
-          IMDb Pro is the essential resource for entertainment professionals,
-          offering unparalleled access to industry data, contact information,
-          and detailed career profiles. It’s where decision-makers go to find
-          talent, research projects, and connect with collaborators.
+          We handle every aspect of your IMDb presence — from setup to ongoing
+          optimization — so you can focus on your craft while we ensure your
+          profile stands out.
         </p>
       </div>
 
@@ -63,38 +64,38 @@ export default function ImdbProServices() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl w-full px-6 mb-20">
         {[
           {
+            title: "New Page Creation",
+            items: [
+              "Set up brand-new IMDb profiles",
+              "For individuals & production companies",
+              "Follow IMDb submission guidelines",
+              "Ensure fast approval",
+            ],
+          },
+          {
             title: "Profile Optimization",
             items: [
-              "Enhanced profile creation",
-              "Bio & resume crafting",
-              "Media integration",
-              "Regular updates",
+              "Add missing credits & media",
+              "Craft compelling bios & summaries",
+              "Verify key information",
+              "Enhance visual presentation",
             ],
           },
           {
-            title: "Contact & Networking",
+            title: "Regular Updates",
             items: [
-              "Verified contact info",
-              "Networking strategy",
-              "Casting director access",
-              "Talent discovery",
+              "Keep credits current",
+              "Update awards & milestones",
+              "Refresh media & headshots",
+              "Maintain active presence",
             ],
           },
           {
-            title: "Project Insights",
+            title: "IMDb Compliance",
             items: [
-              "Industry data & trends",
-              "Project tracking",
-              "Casting announcements",
-              "Custom alerts",
-            ],
-          },
-          {
-            title: "Analytics & Visibility",
-            items: [
-              "Profile performance reports",
-              "STARmeter tracking",
-              "Audience insights",
+              "Strict adherence to guidelines",
+              "Avoid rejections & delays",
+              "Maintain credibility & trust",
             ],
           },
         ].map((service, i) => (
@@ -117,39 +118,42 @@ export default function ImdbProServices() {
       {/* Who Can Benefit */}
       <div className="max-w-4xl px-6 mb-20 text-center space-y-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          Who Can Benefit?
+          Benefits for You
         </h2>
         <p>
-          <span className="font-semibold text-white">Actors & Talent:</span> Get
-          discovered by casting directors and enhance your professional image.
+          <span className="font-semibold text-white">Credible Presence:</span> A
+          polished, professional profile on the world’s leading entertainment
+          database.
         </p>
         <p>
           <span className="font-semibold text-white">
-            Directors & Producers:
+            Increased Discoverability:
           </span>{" "}
-          Research talent, track projects, and connect with crew members.
+          Get found by casting directors, press, collaborators, and fans.
         </p>
         <p>
-          <span className="font-semibold text-white">Writers & Creatives:</span>{" "}
-          Showcase your portfolio and connect with decision-makers.
+          <span className="font-semibold text-white">
+            Accurate Information:
+          </span>{" "}
+          Ensure your work and achievements are correctly represented.
         </p>
         <p>
-          <span className="font-semibold text-white">Agents & Managers:</span>{" "}
-          Manage rosters effectively and stay on top of industry trends.
+          <span className="font-semibold text-white">Hassle-Free Support:</span>{" "}
+          Let us handle the complex, time-consuming submission process for you.
         </p>
       </div>
 
       {/* CTA */}
       <div className="w-full bg-gray-800 py-12 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          Elevate Your Career with IMDb Pro
+          Build or Upgrade Your IMDb Presence Today
         </h2>
         <button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">
           Contact Us Now
         </button>
         <p className="mt-6 italic text-gray-300 max-w-xl mx-auto">
           “Hypermedia Frame transformed my{" "}
-          <span className="font-bold text-white">IMDb Pro presence!</span>”
+          <span className="font-bold text-white">IMDb presence!</span>”
           <br />
           <span className="not-italic font-semibold mt-2 text-yellow-400 block">
             – Award-winning Actress, L. Chen
