@@ -8,6 +8,7 @@ import {
   Megaphone,
   MonitorSmartphone,
 } from "lucide-react";
+import Link from "next/link";
 
 export function FeaturesSection() {
   const iconColor = "#535353"; // Yellow-400
@@ -61,7 +62,7 @@ export function FeaturesSection() {
         </p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
               key={i}
@@ -74,13 +75,15 @@ export function FeaturesSection() {
               <p className="text-gray-400 text-sm">{service.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Button */}
         <div className="text-center mt-14">
-          <button className="bg-gray-200/30  hover:bg-gray-200/50 text-white font-semibold px-8 py-3 rounded-md transition-all shadow-md border border-white">
-            Get Started Today
-          </button>
+          <Link href="/contact">
+            <button className="bg-gray-200/30  hover:bg-gray-200/50 text-white font-semibold px-8 py-3 rounded-md transition-all shadow-md border border-white">
+              Get Started Today
+            </button>
+          </Link>
         </div>
       </div>
     </section>
