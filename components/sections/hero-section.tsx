@@ -98,7 +98,7 @@ export function HeroSection() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-3xl sm:text-4xl md:text-7xl font-bold leading-[200px] text-center"
+              className="text-3xl sm:text-4xl md:text-6xl font-bold md:leading-[80px]  text-center"
               onAnimationComplete={() => console.log("done")}
             />
             <BlurText
@@ -108,7 +108,7 @@ export function HeroSection() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-2xl  text-center"
+              className="text-sm md:text-xl text-center"
               onAnimationComplete={() => console.log("done")}
             />
             {/* Subtitle Section */}
@@ -164,7 +164,7 @@ export function HeroSection() {
               <motion.div variants={itemVariants}>
                 <Link
                   href="#"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black text-xl font-semibold rounded-md hover:bg-yellow-600 transition"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black text-sm md:text-xl font-semibold rounded-md hover:bg-yellow-600 transition"
                 >
                   Get Started Today
                   <ArrowRight className="h-5 w-5" />
