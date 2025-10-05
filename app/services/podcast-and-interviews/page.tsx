@@ -21,7 +21,7 @@ export default function PodcastInterviewsServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={"../podacst.webp"}
+            src={"../podcast.webp"}
             alt="Podcast & Interview Features"
             width={600}
             height={400}
