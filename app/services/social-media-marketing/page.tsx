@@ -24,7 +24,7 @@ export default function SocialMediaMarketingServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={"./social-media-marketing.jpg"}
+            src={"../social-media-marketing.jpg"}
             alt="Facebook & Instagram Marketing"
             width={600}
             height={400}

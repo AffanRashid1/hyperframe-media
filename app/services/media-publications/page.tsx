@@ -26,7 +26,7 @@ export default function MediaPublicationsServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={"./media-publications-service.jpg"}
+            src={"../media-publications-service.jpg"}
             alt="Media Publication Features"
             width={600}
             height={400}

@@ -25,7 +25,7 @@ export default function ImdbServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={"./IMDb-Services.webp"}
+            src={"../IMDb-Services.webp"}
             alt="IMDb Profile Management"
             width={600}
             height={400}

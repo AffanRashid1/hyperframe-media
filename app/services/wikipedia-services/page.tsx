@@ -24,7 +24,7 @@ export default function WikipediaManagementServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={"./wikipedia-management.webp"}
+            src={"../wikipedia-management.webp"}
             alt="Wikipedia Page Management"
             width={600}
             height={400}
