@@ -25,7 +25,7 @@ export default function BillboardMarketingServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={business1}
+            src={"./billboard-marketing.png"}
             alt="Iconic Billboard Campaign"
             width={600}
             height={400}

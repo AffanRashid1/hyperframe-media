@@ -23,7 +23,7 @@ export default function AIAgentsServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={business1}
+            src={"./ai-agents.jpeg"}
             alt="AI-Powered Brand Assistants"
             width={600}
             height={400}

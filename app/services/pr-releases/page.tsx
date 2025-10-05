@@ -24,7 +24,7 @@ export default function PRReleasesServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={business1}
+            src={"./pr-releases.jpg"}
             alt="Press Release Distribution"
             width={600}
             height={400}

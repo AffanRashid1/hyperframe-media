@@ -24,7 +24,7 @@ export default function WebDevelopmentServices() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={business1}
+            src={"./website-development.jpg"}
             alt="Professional Website Development"
             width={600}
             height={400}
