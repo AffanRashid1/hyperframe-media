@@ -103,7 +103,7 @@ export function HeroSection() {
             />
             <BlurText
               text={
-                "Everything you need to build credibility and visibility — from PR to Wikipedia, IMDb and more."
+                "Everything you need to build credibility and visibility from PR to Wikipedia, IMDb and more."
               }
               delay={150}
               animateBy="words"
