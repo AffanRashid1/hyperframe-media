@@ -14,7 +14,7 @@ const servicesData = [
   {
     icon: "🎙️",
     title: "Podcast & Interviews",
-    subtitle: "Your Voice, Your Story—Amplified",
+    subtitle: "Your Voice, Your StoryAmplified",
     description:
       "Get featured on top podcasts and interviews to share your story, build authority, and connect with new audiences.",
     points: [

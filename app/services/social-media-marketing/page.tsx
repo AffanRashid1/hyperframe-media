@@ -39,7 +39,7 @@ export default function SocialMediaMarketingServices() {
             Grow Your Brand and Engage Your Audience on Facebook & Instagram
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Follower count? Engagement? Sales? We handle it all — with smart
+            Follower count? Engagement? Sales? We handle it all with smart
             content, targeted ads, and daily community love.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
@@ -68,7 +68,7 @@ export default function SocialMediaMarketingServices() {
               Content Creation & Calendar
             </h3>
             <p>
-              Eye-catching graphics, reels, videos, and captions — planned
+              Eye-catching graphics, reels, videos, and captions planned
               weekly/monthly so your feed never sleeps.
             </p>
           </div>
@@ -77,8 +77,8 @@ export default function SocialMediaMarketingServices() {
               Paid Advertising Campaigns
             </h3>
             <p>
-              Facebook & Instagram Ads managed end-to-end — targeting,
-              budgeting, A/B testing — for lowest cost per result.
+              Facebook & Instagram Ads managed end-to-end targeting, budgeting,
+              A/B testing for lowest cost per result.
             </p>
           </div>
           <div className="space-y-2">
@@ -86,8 +86,8 @@ export default function SocialMediaMarketingServices() {
               Community Management
             </h3>
             <p>
-              We reply, react, and engage daily — turning followers into fans
-              and customers.
+              We reply, react, and engage daily turning followers into fans and
+              customers.
             </p>
           </div>
           <div className="space-y-2 md:col-span-2">
@@ -96,7 +96,7 @@ export default function SocialMediaMarketingServices() {
             </h3>
             <p>
               Clear monthly reports showing reach, engagement, conversions, and
-              ROI — no guesswork, only growth.
+              ROI no guesswork, only growth.
             </p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function SocialMediaMarketingServices() {
               🎯 Targeted Advertising
             </h3>
             <p>
-              Reach exactly the people most likely to buy — based on interests,
+              Reach exactly the people most likely to buy based on interests,
               behavior, location & more.
             </p>
           </div>
@@ -140,8 +140,8 @@ export default function SocialMediaMarketingServices() {
               ⏱️ Time & Effort Saved
             </h3>
             <p>
-              Our team manages everything — you focus on your business, we
-              handle the buzz.
+              Our team manages everything you focus on your business, we handle
+              the buzz.
             </p>
           </div>
         </div>

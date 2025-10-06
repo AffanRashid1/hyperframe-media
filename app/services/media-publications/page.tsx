@@ -41,7 +41,7 @@ export default function MediaPublicationsServices() {
             Get Featured in Top-Tier & Niche Media Outlets
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            From Forbes to your industry’s favorite blog — we place your story
+            From Forbes to your industry’s favorite blog we place your story
             where it matters most.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
@@ -62,7 +62,7 @@ export default function MediaPublicationsServices() {
             </h3>
             <p>
               We pitch your story to national/international outlets, major
-              online pubs, and recognized magazines — for maximum exposure and
+              online pubs, and recognized magazines for maximum exposure and
               prestige.
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function MediaPublicationsServices() {
             </h3>
             <p>
               We target specialized blogs, trade journals, and community
-              platforms — where your ideal audience is already paying attention.
+              platforms where your ideal audience is already paying attention.
             </p>
           </div>
           <div className="space-y-2">
@@ -80,7 +80,7 @@ export default function MediaPublicationsServices() {
               Press Pitching & Story Development
             </h3>
             <p>
-              We craft journalist-ready narratives — compelling, newsworthy, and
+              We craft journalist-ready narratives compelling, newsworthy, and
               tailored to what editors actually want to publish.
             </p>
           </div>
@@ -89,8 +89,8 @@ export default function MediaPublicationsServices() {
               Distribution & Follow-Ups
             </h3>
             <p>
-              We manage end-to-end outreach — from first email to final feature
-              — ensuring your story goes live, on time, and on point.
+              We manage end-to-end outreach from first email to final feature
+              ensuring your story goes live, on time, and on point.
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function MediaPublicationsServices() {
             </h3>
             <p>
               Reach both mainstream readers and hyper-engaged niche communities
-              — no audience left behind.
+              no audience left behind.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-lg text-left">
@@ -125,8 +125,8 @@ export default function MediaPublicationsServices() {
               🧠 Brand Authority
             </h3>
             <p>
-              Position yourself as a thought leader — not just a business, but
-              an expert in your field.
+              Position yourself as a thought leader not just a business, but an
+              expert in your field.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-lg text-left">
@@ -147,7 +147,7 @@ export default function MediaPublicationsServices() {
           Ready to get featured?
         </h2>
         <p className="text-gray-300 max-w-xl mx-auto mb-6">
-          Let’s build a custom media placement strategy — whether you’re aiming
+          Let’s build a custom media placement strategy whether you’re aiming
           for TechCrunch or your industry’s top newsletter.
         </p>
         <button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">

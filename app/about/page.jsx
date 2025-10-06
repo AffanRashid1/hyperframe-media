@@ -88,7 +88,7 @@ export default function AboutUs() {
         </h1>
         <p className="text-gray-300 max-w-3xl leading-relaxed">
           At Hyper Media Frame, we are more than just a digital services
-          provider — we are your growth partner. In an age where online presence
+          provider we are your growth partner. In an age where online presence
           defines credibility, we specialize in helping individuals and
           businesses stand out with a powerful and authentic digital identity.
         </p>
@@ -113,8 +113,8 @@ export default function AboutUs() {
           <p className="text-gray-300 leading-relaxed">
             From optimizing IMDb pages and crafting authoritative Wikipedia
             entries to securing high-impact media features, designing stunning
-            websites, and managing Facebook & Instagram campaigns — our mission
-            is to put you in front of the right audience with the right story.
+            websites, and managing Facebook & Instagram campaigns our mission is
+            to put you in front of the right audience with the right story.
           </p>
           <p className="text-gray-300 leading-relaxed">
             Our team blends creativity, strategy, and technical expertise to
@@ -122,7 +122,7 @@ export default function AboutUs() {
             long-term success.
           </p>
           <p className="italic text-gray-400">
-            We believe every client has a unique story worth telling — and we’re
+            We believe every client has a unique story worth telling and we’re
             here to make sure yours is seen, heard, and remembered.
           </p>
         </div>
@@ -155,8 +155,8 @@ export default function AboutUs() {
               📊 Transparent & Measurable
             </h3>
             <p>
-              Clear reporting, honest communication, and KPIs that matter — so
-              you always know what’s working.
+              Clear reporting, honest communication, and KPIs that matter so you
+              always know what’s working.
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function AboutUs() {
           Have a question or ready to get started? We’d love to hear from you.
           Whether you’re looking for IMDb optimization, Wikipedia management,
           media features, social media marketing, PR releases, or website
-          development — our team is here to help.
+          development our team is here to help.
         </p>
 
         <div className="max-w-xl mx-auto mb-8 space-y-4 text-gray-300 text-left">
@@ -196,7 +196,7 @@ export default function AboutUs() {
         </div>
 
         <p className="text-gray-400 italic mb-6">
-          Fill out our quick contact form, send us an email, or give us a call —
+          Fill out our quick contact form, send us an email, or give us a call
           one of our experts will respond within 24 hours.
         </p>
 

@@ -33,13 +33,13 @@ export default function PodcastInterviewsServices() {
         {/* Right: Tagline + CTA */}
         <div className="space-y-6">
           <h2 className="text-2xl font-bold text-yellow-400">
-            Your Voice, Your Story — Amplified
+            Your Voice, Your Story Amplified
           </h2>
           <p className="text-gray-300 leading-relaxed">
             Podcasts and interviews are one of the fastest-growing ways for
             celebrities, authors, and thought leaders to reach engaged
             audiences. We help you gain trust, visibility, and long-term
-            influence — through authentic conversations that matter.
+            influence through authentic conversations that matter.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
             Book My Spot
@@ -67,8 +67,8 @@ export default function PodcastInterviewsServices() {
               🎤 Prep & Coaching
             </h3>
             <p>
-              Get talking points, media training, and confidence coaching — so
-              you shine on mic, every time.
+              Get talking points, media training, and confidence coaching so you
+              shine on mic, every time.
             </p>
           </div>
           <div className="space-y-2">
@@ -77,13 +77,13 @@ export default function PodcastInterviewsServices() {
             </h3>
             <p>
               We weave your projects, books, or launches naturally into the
-              conversation — no awkward plugs.
+              conversation no awkward plugs.
             </p>
           </div>
           <div className="space-y-2">
             <h3 className="font-semibold text-yellow-400">📅 Full Logistics</h3>
             <p>
-              From scheduling to reminders to post-show promotion — we handle it
+              From scheduling to reminders to post-show promotion we handle it
               all behind the scenes.
             </p>
           </div>
@@ -92,8 +92,8 @@ export default function PodcastInterviewsServices() {
               ✂️ Content Repurposing
             </h3>
             <p>
-              Receive short clips, quote graphics, and social snippets — ready
-              to repost and grow your reach.
+              Receive short clips, quote graphics, and social snippets ready to
+              repost and grow your reach.
             </p>
           </div>
         </div>

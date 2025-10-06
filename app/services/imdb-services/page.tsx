@@ -40,8 +40,8 @@ export default function ImdbServices() {
             Professional IMDb Page Creation & Management
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Credits missing? Bio outdated? We handle it all — so your IMDb
-            profile works as hard as you do.
+            Credits missing? Bio outdated? We handle it all so your IMDb profile
+            works as hard as you do.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
             Claim Your Page
@@ -59,7 +59,7 @@ export default function ImdbServices() {
             <h3 className="font-semibold text-yellow-400">New Page Creation</h3>
             <p>
               We set up brand-new IMDb profiles for individuals or production
-              companies — following all submission rules for fast approval.
+              companies following all submission rules for fast approval.
             </p>
           </div>
           <div className="space-y-2">
@@ -68,7 +68,7 @@ export default function ImdbServices() {
             </h3>
             <p>
               We enhance existing pages by adding missing credits, high-res
-              images, bios, and verified info — boosting your professional
+              images, bios, and verified info boosting your professional
               presence.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function ImdbServices() {
             <h3 className="font-semibold text-yellow-400">Regular Updates</h3>
             <p>
               As your career grows, so does your page. We keep credits, awards,
-              and media current — automatically.
+              and media current automatically.
             </p>
           </div>
           <div className="space-y-2">
@@ -84,8 +84,8 @@ export default function ImdbServices() {
               Compliance with IMDb Guidelines
             </h3>
             <p>
-              We strictly follow IMDb’s formatting and sourcing rules —
-              maximizing approval rates and long-term credibility.
+              We strictly follow IMDb’s formatting and sourcing rules maximizing
+              approval rates and long-term credibility.
             </p>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function ImdbServices() {
               ✅ Accurate Information
             </h3>
             <p>
-              Ensure every credit, award, and role is correctly listed — no more
+              Ensure every credit, award, and role is correctly listed no more
               outdated or missing data.
             </p>
           </div>
@@ -129,7 +129,7 @@ export default function ImdbServices() {
               ⏱️ Hassle-Free Support
             </h3>
             <p>
-              Let us handle the complex, time-consuming submission process — you
+              Let us handle the complex, time-consuming submission process you
               focus on your next project.
             </p>
           </div>

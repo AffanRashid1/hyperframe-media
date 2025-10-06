@@ -57,7 +57,7 @@ export function FeaturesSection() {
           Grow Your Online Presence with Hyperframe Media
         </h2>
         <p className="text-gray-400 text-center text-lg max-w-2xl mx-auto mb-12">
-          IMDb, Wikipedia, PR, Marketing & More — Everything you need to build
+          IMDb, Wikipedia, PR, Marketing & More Everything you need to build
           credibility and visibility.
         </p>
 

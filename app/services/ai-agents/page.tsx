@@ -13,7 +13,7 @@ export default function AIAgentsServices() {
           Our AI Agents are designed to be your smart assistants for smarter
           branding. With the power of artificial intelligence, we help brands
           automate engagement, streamline content creation, and deliver
-          personalized experiences to their audiences — so you stay responsive,
+          personalized experiences to their audiences so you stay responsive,
           relevant, and ahead of the curve.
         </p>
       </div>
@@ -39,7 +39,7 @@ export default function AIAgentsServices() {
           </blockquote>
           <p className="text-gray-300 leading-relaxed">
             Let intelligent automation handle fan interactions, social replies,
-            and content drafting — while you focus on what matters most.
+            and content drafting while you focus on what matters most.
           </p>
           {/* <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
               Deploy Your AI Agent
@@ -67,7 +67,7 @@ export default function AIAgentsServices() {
               Automated Social Responses
             </h3>
             <p>
-              Smart replies across Facebook, Instagram, and more — no query left
+              Smart replies across Facebook, Instagram, and more no query left
               unanswered.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function AIAgentsServices() {
               Seamless Integration
             </h3>
             <p>
-              Built to work with your existing platforms — no overhaul required.
+              Built to work with your existing platforms no overhaul required.
             </p>
           </div>
         </div>

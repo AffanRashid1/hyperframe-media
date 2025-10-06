@@ -15,7 +15,7 @@ export default function WikipediaManagementServices() {
           At Hypermedia Frame, we specialize in creating and managing Wikipedia
           entries that meet the platform’s strict guidelines. Whether you’re an
           individual, a brand, or an organization, we ensure your page is
-          reliable, verifiable, and neutral — the three pillars of Wikipedia.
+          reliable, verifiable, and neutral the three pillars of Wikipedia.
         </p>
       </div>
 
@@ -40,7 +40,7 @@ export default function WikipediaManagementServices() {
           </h2>
           <p className="text-gray-300 leading-relaxed">
             Notability? Citations? Neutral tone? We handle Wikipedia’s toughest
-            rules — so your page gets approved, stays live, and builds lasting
+            rules so your page gets approved, stays live, and builds lasting
             credibility.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
@@ -59,7 +59,7 @@ export default function WikipediaManagementServices() {
             <h3 className="font-semibold text-yellow-400">Page Creation</h3>
             <p>
               We research, write, and submit new Wikipedia pages using verified,
-              notable information — built to pass strict editorial review.
+              notable information built to pass strict editorial review.
             </p>
           </div>
           <div className="space-y-2">
@@ -76,8 +76,8 @@ export default function WikipediaManagementServices() {
               Reference & Citation Management
             </h3>
             <p>
-              We source and add credible third-party references — news articles,
-              books, journals — to back every claim and boost legitimacy.
+              We source and add credible third-party references news articles,
+              books, journals to back every claim and boost legitimacy.
             </p>
           </div>
           <div className="space-y-2">
@@ -86,7 +86,7 @@ export default function WikipediaManagementServices() {
             </h3>
             <p>
               Wikipedia is open-edit. We monitor for vandalism, policy changes,
-              or biased edits — and protect your page 24/7.
+              or biased edits and protect your page 24/7.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function WikipediaManagementServices() {
               🏛️ Credibility & Authority
             </h3>
             <p>
-              A Wikipedia page acts as an independent, trusted reference —
+              A Wikipedia page acts as an independent, trusted reference
               boosting your public reputation instantly.
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function WikipediaManagementServices() {
             </h3>
             <p>
               We strictly follow notability, verifiability, and neutrality
-              standards — maximizing approval and minimizing rejections.
+              standards maximizing approval and minimizing rejections.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-lg">
@@ -122,7 +122,7 @@ export default function WikipediaManagementServices() {
             </h3>
             <p>
               Let our Wikipedia experts handle submissions, revisions, and
-              monitoring — you focus on your legacy, we protect it.
+              monitoring you focus on your legacy, we protect it.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function WikipediaManagementServices() {
         </h2>
         <p className="text-gray-300 max-w-xl mx-auto mb-6">
           Whether you’re building your first page or protecting an existing one
-          — we’ve got you covered.
+          we’ve got you covered.
         </p>
         <button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">
           Start Your Consultation

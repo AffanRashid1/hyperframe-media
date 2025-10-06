@@ -54,8 +54,8 @@ export default function ImdbProServices() {
       <div className="max-w-4xl px-6 mb-20 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">What We Do</h2>
         <p className="text-gray-300 leading-relaxed">
-          We handle every aspect of your IMDb presence — from setup to ongoing
-          optimization — so you can focus on your craft while we ensure your
+          We handle every aspect of your IMDb presence from setup to ongoing
+          optimization so you can focus on your craft while we ensure your
           profile stands out.
         </p>
       </div>

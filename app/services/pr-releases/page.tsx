@@ -14,7 +14,7 @@ export default function PRReleasesServices() {
           A well-written press release can get your story into the right hands
           and build instant credibility. At Hypermedia Frame, we craft
           professional, newsworthy PR content and distribute it to relevant
-          journalists, bloggers, and media outlets — so you gain attention,
+          journalists, bloggers, and media outlets so you gain attention,
           backlinks, and lasting trust.
         </p>
       </div>
@@ -39,7 +39,7 @@ export default function PRReleasesServices() {
             Create and Distribute Powerful Press Releases
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Whether it’s a product launch, funding round, or milestone — we turn
+            Whether it’s a product launch, funding round, or milestone we turn
             your news into media-worthy stories that journalists want to cover.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
@@ -68,7 +68,7 @@ export default function PRReleasesServices() {
               Press Release Writing
             </h3>
             <p>
-              Professional copy written to journalistic standards — with strong
+              Professional copy written to journalistic standards with strong
               hooks, headlines, and clear calls-to-action.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function PRReleasesServices() {
               Media Distribution
             </h3>
             <p>
-              Submitted to premium newswires and targeted media contacts — not
+              Submitted to premium newswires and targeted media contacts not
               just bulk blasts, but strategic outreach.
             </p>
           </div>

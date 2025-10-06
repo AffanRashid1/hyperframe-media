@@ -14,8 +14,8 @@ export default function WebDevelopmentServices() {
           Your website is your digital headquarters. At Hypermedia Frame, we
           design and develop fast, mobile-friendly, and visually appealing
           websites that convert visitors into customers. Whether you’re a
-          personal brand, startup, or established business — we create a site
-          that reflects your identity and drives real results.
+          personal brand, startup, or established business we create a site that
+          reflects your identity and drives real results.
         </p>
       </div>
 
@@ -39,8 +39,8 @@ export default function WebDevelopmentServices() {
             Build a Professional, Responsive Website That Works for You
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            From concept to launch — and beyond — we handle everything so you
-            get a stunning, high-performing website without the tech headaches.
+            From concept to launch and beyond we handle everything so you get a
+            stunning, high-performing website without the tech headaches.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
             Get Started Today
@@ -68,14 +68,13 @@ export default function WebDevelopmentServices() {
               Responsive & Mobile-Friendly
             </h3>
             <p>
-              Flawless experience across all devices — phones, tablets,
-              desktops.
+              Flawless experience across all devices phones, tablets, desktops.
             </p>
           </div>
           <div className="space-y-2">
             <h3 className="font-semibold text-yellow-400">CMS Integration</h3>
             <p>
-              Easy-to-manage platforms like WordPress — update content yourself,
+              Easy-to-manage platforms like WordPress update content yourself,
               anytime.
             </p>
           </div>
@@ -102,7 +101,7 @@ export default function WebDevelopmentServices() {
               Ongoing Maintenance & Support
             </h3>
             <p>
-              Backups, updates, and tech support — so your site stays secure and
+              Backups, updates, and tech support so your site stays secure and
               smooth.
             </p>
           </div>
@@ -139,7 +138,7 @@ export default function WebDevelopmentServices() {
         </h2>
         <p className="text-gray-300 max-w-xl mx-auto mb-6">
           Click below for a free consultation on how we can bring your vision
-          online — beautifully, quickly, and effectively.
+          online beautifully, quickly, and effectively.
         </p>
         <button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">
           Contact Us Now

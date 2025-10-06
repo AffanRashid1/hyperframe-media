@@ -13,7 +13,7 @@ export default function BillboardMarketingServices() {
         <p className="text-gray-300 max-w-3xl leading-relaxed">
           Showcase your brand on iconic billboards in prime locations to
           maximize visibility and create lasting impact. Billboards are timeless
-          symbols of influence and visibility — for celebrities, authors, and
+          symbols of influence and visibility for celebrities, authors, and
           public figures, having your face or brand on a prime billboard creates
           instant recognition and authority that digital ads alone can’t
           achieve.
@@ -41,7 +41,7 @@ export default function BillboardMarketingServices() {
           </h2>
           <p className="text-gray-300 leading-relaxed">
             Times Square. Sunset Strip. Dubai Mall. We put you where millions
-            look — turning heads, stopping traffic, and starting conversations.
+            look turning heads, stopping traffic, and starting conversations.
           </p>
           <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
             Book My Billboard
@@ -62,7 +62,7 @@ export default function BillboardMarketingServices() {
                 Prime Location Booking
               </h3>
               <p>
-                Secure placements in high-traffic, iconic spots — Times Square,
+                Secure placements in high-traffic, iconic spots Times Square,
                 LA, London, Dubai & more.
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function BillboardMarketingServices() {
                 Attention-Grabbing Creative
               </h3>
               <p>
-                We design visuals that stop scrolling minds — bold, clean, and
+                We design visuals that stop scrolling minds bold, clean, and
                 unforgettable in under 3 seconds.
               </p>
             </div>
@@ -85,7 +85,7 @@ export default function BillboardMarketingServices() {
               <h3 className="font-semibold text-white">Campaign Strategy</h3>
               <p>
                 Tailored for book launches, album drops, film premieres, or
-                brand milestones — timed for maximum buzz.
+                brand milestones timed for maximum buzz.
               </p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function BillboardMarketingServices() {
             <div>
               <h3 className="font-semibold text-white">End-to-End Logistics</h3>
               <p>
-                We handle permits, printing, installation, and scheduling — you
+                We handle permits, printing, installation, and scheduling you
                 just show up for the photoshoot.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function BillboardMarketingServices() {
                 Documentation & Content
               </h3>
               <p>
-                Professional photos and video footage delivered — perfect for
+                Professional photos and video footage delivered perfect for
                 press kits, social media, and reels.
               </p>
             </div>
@@ -122,7 +122,7 @@ export default function BillboardMarketingServices() {
             Billboards give you a powerful offline presence that translates into
             online buzz. They become shareable moments on social media,
             strengthen your credibility, and position you as a high-profile
-            public figure — not just online, but in the real world.
+            public figure not just online, but in the real world.
           </p>
         </div>
       </div>
