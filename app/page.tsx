@@ -20,7 +20,8 @@ import SplashCursor from "@/components/SplashCursor/spplash-cursor";
 
 export default function HomePage() {
   const techLogos = [
-    { src: "./company-white.png", title: "React", href: "https://react.dev" },
+    // { src: "./company-white.png", title: "React", href: "https://react.dev" },
+    { src: "./billboard.png", title: "Billboard", href: "/" },
     // {
     //   node: <DiscAlbum size={60} />,
     //   title: "Next.js",
@@ -45,12 +46,11 @@ export default function HomePage() {
       />
 
       <HeroSection />
-      {/* <About /> */}
       <LogoLoop
         logos={techLogos}
         speed={120}
         direction="left"
-        logoHeight={48}
+        logoHeight={120}
         gap={40}
         pauseOnHover
         scaleOnHover
@@ -59,6 +59,7 @@ export default function HomePage() {
         ariaLabel="Technology partners"
         style={{ paddingTop: "40px" }}
       />
+      <About />
 
       {/* <LogoLoop
         logos={techLogos}

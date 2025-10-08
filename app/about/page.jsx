@@ -99,7 +99,7 @@ export default function AboutUs() {
         {/* Left: Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={business1}
+            src={"./about.jpg"}
             alt="Hyper Media Frame Team"
             width={600}
             height={400}
@@ -129,10 +129,10 @@ export default function AboutUs() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="max-w-4xl px-6 mb-16 text-center">
+      <div className="max-w-5xl px-6 mb-16 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-8">Why Choose Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
-          <div className="p-5 bg-gray-800 rounded-lg">
+          <div className="p-5 py-4 bg-gray-800 rounded-lg">
             <h3 className="font-semibold text-yellow-400 mb-2">
               🏆 Proven Results
             </h3>
@@ -141,7 +141,7 @@ export default function AboutUs() {
               publishing, and personal branding.
             </p>
           </div>
-          <div className="p-5 bg-gray-800 rounded-lg">
+          <div className="p-5 py-4 bg-gray-800 rounded-lg">
             <h3 className="font-semibold text-yellow-400 mb-2">
               🎯 Tailored Strategies
             </h3>
@@ -150,7 +150,7 @@ export default function AboutUs() {
               and industry.
             </p>
           </div>
-          <div className="p-5 bg-gray-800 rounded-lg">
+          <div className="p-5 py-4 bg-gray-800 rounded-lg">
             <h3 className="font-semibold text-yellow-400 mb-2">
               📊 Transparent & Measurable
             </h3>
