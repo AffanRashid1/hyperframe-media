@@ -22,6 +22,11 @@ export default function HomePage() {
   const techLogos = [
     // { src: "./company-white.png", title: "React", href: "https://react.dev" },
     { src: "./billboard.png", title: "Billboard", href: "/" },
+    { src: "./loop1.png", title: "loop1", href: "/" },
+    { src: "./loop2.png", title: "loop1", href: "/" },
+    { src: "./loop3.png", title: "loop1", href: "/" },
+    { src: "./loop4.png", title: "Billboard", href: "/" },
+    { src: "./loop5.png", title: "Billboard", href: "/" },
     // {
     //   node: <DiscAlbum size={60} />,
     //   title: "Next.js",
@@ -50,7 +55,7 @@ export default function HomePage() {
         logos={techLogos}
         speed={120}
         direction="left"
-        logoHeight={120}
+        logoHeight={50}
         gap={40}
         pauseOnHover
         scaleOnHover
