@@ -63,6 +63,92 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center mt-10">
+          <div className="w-full px-6 mt-20 mb-12 text-left mt-5">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              About <span className="text-yellow-400">Hyper Media Frame</span>
+            </h1>
+            <p className="text-gray-300 max-w-3xl leading-relaxed">
+              At Hyper Media Frame, we are more than just a digital services
+              provider we are your growth partner. In an age where online
+              presence defines credibility, we specialize in helping individuals
+              and businesses stand out with a powerful and authentic digital
+              identity.
+            </p>
+          </div>
+
+          {/* Hero Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full px-6 mb-20 items-center">
+            {/* Left: Image */}
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src={"./about.jpg"}
+                alt="Hyper Media Frame Team"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
+
+            {/* Right: Mission Statement */}
+            <div className="space-y-6">
+              <p className="text-gray-300 leading-relaxed">
+                From optimizing IMDb pages and crafting authoritative Wikipedia
+                entries to securing high-impact media features, designing
+                stunning websites, and managing Facebook & Instagram campaigns
+                our mission is to put you in front of the right audience with
+                the right story.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                Our team blends creativity, strategy, and technical expertise to
+                deliver measurable results that build trust, visibility, and
+                long-term success.
+              </p>
+              <p className="italic text-gray-400">
+                We believe every client has a unique story worth telling and
+                we’re here to make sure yours is seen, heard, and remembered.
+              </p>
+            </div>
+          </div>
+
+          {/* Why Choose Us */}
+          <div className="max-w-5xl px-6 mb-16 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">
+              Why Choose Us
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
+              <div className="p-5 py-4 border-gray-200/30 bg-white/80 dark:bg-black/40 border rounded-lg">
+                <h3 className="font-semibold text-yellow-400 mb-2">
+                  🏆 Proven Results
+                </h3>
+                <p>
+                  Experienced team with track record across entertainment, tech,
+                  publishing, and personal branding.
+                </p>
+              </div>
+              <div className="p-5 py-4 border-gray-200/30 bg-white/80 dark:bg-black/40 border rounded-lg">
+                <h3 className="font-semibold text-yellow-400 mb-2">
+                  🎯 Tailored Strategies
+                </h3>
+                <p>
+                  No templates. Every plan is custom-built for your goals,
+                  audience, and industry.
+                </p>
+              </div>
+              <div className="p-5 py-4 border-gray-200/30 bg-white/80 dark:bg-black/40 border rounded-lg">
+                <h3 className="font-semibold text-yellow-400 mb-2">
+                  📊 Transparent & Measurable
+                </h3>
+                <p>
+                  Clear reporting, honest communication, and KPIs that matter so
+                  you always know what’s working.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
