@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icons } from "@/components/icons";
 import { ScrollToTopButton } from "@/components/scroll-to-top-button";
+import Image from "next/image";
 
 export function SiteFooter() {
   return (
@@ -10,9 +11,10 @@ export function SiteFooter() {
           {/* Logo and Site Name */}
           <div className="flex items-center gap-2">
             {/* <Icons.logo className="h-5 w-5" /> */}
-            <span className="font-semibold text-sm uppercase tracking-wide">
+            {/* <span className="font-semibold text-sm uppercase tracking-wide">
               Hypermedia Frame
-            </span>
+            </span> */}
+            <Image src={"./logo.png"} alt="Logo" width={100} height={100} />
           </div>
 
           {/* Navigation Links */}

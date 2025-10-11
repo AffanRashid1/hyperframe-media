@@ -12,7 +12,7 @@ const WhyChooseUs: FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className=" border-gray-200/30 bg-white/80 dark:bg-black/40 border  rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center"
+              className="border-gray-200/30 bg-white/80 dark:bg-black/40 border rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center"
             >
               <div className="w-full h-48 relative mb-4 rounded-lg overflow-hidden">
                 <Image
@@ -42,7 +42,7 @@ const WhyChooseUs: FC = () => {
                 <h3 className="text-lg font-semibold mt-4 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+                <p className="text-gray-400 text-sm">{feature.description}</p>
               </div>
             </div>
           ))}

@@ -17,6 +17,7 @@ import { DiscAlbum, Globe } from "lucide-react";
 import CountUp from "@/components/CountUp/CountUp";
 import StatsSection from "@/components/sections/stats-section";
 import SplashCursor from "@/components/SplashCursor/spplash-cursor";
+import Image from "next/image";
 
 export default function HomePage() {
   const techLogos = [

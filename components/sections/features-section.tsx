@@ -8,6 +8,7 @@ import {
   Megaphone,
   MonitorSmartphone,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function FeaturesSection() {
@@ -85,6 +86,9 @@ export function FeaturesSection() {
             </button>
           </Link>
         </div>
+      </div>
+      <div className="relative container mx-auto  w-full h-[80vh] mt-14 rounded-lg overflow-hidden">
+        <Image src={"./brands.png"} alt="brands" fill />
       </div>
     </section>
   );

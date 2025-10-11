@@ -6,6 +6,7 @@ import { AnimatedText } from "../ui/animated-text";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import WhyChooseUs from "./why-choose-us";
+import BenefitsSection from "./benifits-section";
 
 const About = () => {
   return (
@@ -64,6 +65,8 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <BenefitsSection />
 
         <div className="flex flex-col items-center mt-20">
           <div className="w-full px-6 mt-20 mb-12 text-left mt-5">
