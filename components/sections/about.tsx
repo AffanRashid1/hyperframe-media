@@ -5,10 +5,11 @@ import React from "react";
 import { AnimatedText } from "../ui/animated-text";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import WhyChooseUs from "./why-choose-us";
 
 const About = () => {
   return (
-    <div className="bg-muted/30 w-full py-16">
+    <div className="bg-muted/30 w-full py-16 ">
       <div className="container px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="order-2 md:order-1">
@@ -64,7 +65,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mt-10">
+        <div className="flex flex-col items-center mt-20">
           <div className="w-full px-6 mt-20 mb-12 text-left mt-5">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               About <span className="text-yellow-400">Hyper Media Frame</span>
@@ -114,7 +115,7 @@ const About = () => {
           </div>
 
           {/* Why Choose Us */}
-          <div className="max-w-5xl px-6 mb-16 text-center">
+          {/* <div className="max-w-5xl px-6 mb-16 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-8">
               Why Choose Us
             </h2>
@@ -147,7 +148,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
+          <WhyChooseUs />
         </div>
       </div>
     </div>

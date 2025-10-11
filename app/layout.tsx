@@ -64,7 +64,7 @@ export default function RootLayout({
           <div>
             <Suspense>
               <div className="flex-1">{children}</div>
-              <SplashCursor />
+              {/* <SplashCursor /> */}
             </Suspense>
           </div>
           <SiteFooter />

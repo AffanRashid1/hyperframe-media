@@ -12,6 +12,7 @@ import { Icons } from "@/components/icons";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
 import Link from "next/link";
 import { bookUrl } from "@/lib/constant";
+import Image from "next/image";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -27,7 +28,7 @@ const navItems = [
   // { name: "Activities & Fun", href: "/activities" },
 ];
 
-export function SiteHeader() {
+export function SiteHeader(): React.FC {
   const pathname = usePathname();
   const scrollPosition = useScrollPosition();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -52,11 +53,13 @@ export function SiteHeader() {
     >
       <div className="container px-10 md:px-20 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 z-10">
+          <Image src={"./logo.png"} alt="Logo" width={100} height={100} />
+
           {/* <Icons.logo className="h-6 w-6" /> */}
-          <span className="font-heading text-xl tracking-tight">
-            {/* ComponentCraft */}
+
+          {/* <span className="font-heading text-xl tracking-tight">
             Hyperframe Media
-          </span>
+          </span> */}
         </Link>
 
         {/* Desktop Navigation - Hidden on mobile */}
@@ -148,11 +151,12 @@ export function SiteHeader() {
                   className="flex items-center space-x-2"
                   onClick={closeMobileMenu}
                 >
+                  <Image src={"./logo.png"} alt="Logo" />
                   {/* <Icons.logo className="h-6 w-6" /> */}
-                  <span className="font-heading text-lg">
+                  {/* <span className="font-heading text-lg">
                     {" "}
                     Hyperframe Media
-                  </span>
+                  </span> */}
                 </Link>
                 <button
                   onClick={closeMobileMenu}
