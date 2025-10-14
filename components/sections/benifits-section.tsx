@@ -33,14 +33,14 @@ export default function BenefitsSection() {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-8xl flex items-center justify-center flex-col mx-auto mb-12">
           {/* <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
           </h2> */}
           <h1 className="text-3xl md:text-4xl font-bold mb-12">
             Benefits of Article Publishing & Press Releases
           </h1>
 
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed max-w-3xl text-center">
             In today’s digital world, visibility is everything. Publishing
             powerful articles and press releases helps your brand reach global
             audiences, gain credibility, and establish a strong online presence.

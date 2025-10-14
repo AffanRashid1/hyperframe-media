@@ -9,10 +9,12 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import AOS from "aos";
+import Image from "next/image";
 
 const servicesData = [
   {
     icon: "🎙️",
+    img: "./podcast-cover.jpeg",
     title: "Podcast & Interviews",
     subtitle: "Your Voice, Your StoryAmplified",
     description:
@@ -27,6 +29,7 @@ const servicesData = [
   },
   {
     icon: "💻",
+    img: "./web-dev-cover.jpg",
     title: "Website Development",
     subtitle: "Your Digital Headquarters, Designed for Authority",
     description:
@@ -42,6 +45,7 @@ const servicesData = [
   {
     icon: "🤖",
     title: "AI Agents",
+    img: "./ai-agents-cover.webp",
     subtitle: "Smart Assistants for Smarter Branding",
     description:
       "Leverage custom AI-powered agents to handle fan engagement, content support, and brand automation.",
@@ -55,6 +59,7 @@ const servicesData = [
   },
   {
     icon: "📰",
+    img: "./media-publications-cover.jpg",
     title: "Publications",
     subtitle: "Your Story, Amplified in the Media",
     description:
@@ -69,6 +74,7 @@ const servicesData = [
   },
   {
     icon: "📱",
+    img: "./social-media-markketing-cover.webp",
     title: "Social Media Marketing",
     subtitle: "Where Your Audience Lives, We Make You Visible",
     description:
@@ -84,6 +90,7 @@ const servicesData = [
   {
     icon: "🎬",
     title: "IMDb Services",
+    img: "imdb-seervices-cover.png",
     subtitle: "Your Digital Résumé in the Entertainment Industry",
     description:
       "Build and manage a professional IMDb profile with verified credits, filmography, and media.",
@@ -98,6 +105,7 @@ const servicesData = [
   {
     icon: "📊",
     title: "Billboard Marketing",
+    img: "billboard-marketing-cover.jpg",
     subtitle: "Make a Bold Statement in the Real World",
     description:
       "Showcase your brand on iconic billboards in prime locations to maximize visibility.",
@@ -111,6 +119,7 @@ const servicesData = [
   },
   {
     icon: "📚",
+    img: "wikipedia-cover.jpeg",
     title: "Wikipedia Services",
     subtitle: "Your Trusted Voice on the World’s Largest Encyclopedia",
     description:
@@ -126,6 +135,7 @@ const servicesData = [
   {
     icon: "📢",
     title: "PR Releases",
+    img: "press-release-cover.png",
     subtitle: "Turn Your Achievements into Headlines",
     description:
       "Announce your milestones with professional press releases distributed to trusted media outlets worldwide.",
@@ -197,7 +207,15 @@ const ServicesSection = () => {
             >
               <Card className="h-full border border-gray-200/30 bg-white/80 dark:bg-black/40 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-6 space-y-4">
-                  <div className="text-4xl">{service.icon}</div>
+                  <div className="w-full h-48 relative mb-4 rounded-lg overflow-hidden">
+                    <Image
+                      src={service.img}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  {/* <div className="text-4xl">{service.icon}</div> */}
                   <h3 className="text-xl font-semibold">{service.title}</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     {service.subtitle}
