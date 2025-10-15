@@ -65,18 +65,18 @@ export function SiteFooter() {
           <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>
-              <Link href="#home" className="hover:text-yellow-400 transition">
+              <Link href="/" className="hover:text-yellow-400 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:text-yellow-400 transition">
+              <Link href="/about" className="hover:text-yellow-400 transition">
                 About Us
               </Link>
             </li>
             <li>
               <Link
-                href="#contact"
+                href="/contact"
                 className="hover:text-yellow-400 transition"
               >
                 Contact Us
