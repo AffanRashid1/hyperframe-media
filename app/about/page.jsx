@@ -1,12 +1,23 @@
 import { business1 } from "@/components/assets";
+import MissionVision from "@/components/sections/mission-vision";
+import { TestimonialsSection } from "@/components/sections/testimonials-section";
+import WhoWeAre from "@/components/sections/who-we-are";
 import WhyChooseUs from "@/components/sections/why-choose-us";
+import WhyWeStandOut from "@/components/sections/why-we-stand";
 import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div className="bg-muted/30 text-white flex flex-col items-center">
+    <div className="bg-muted/30 text-white flex flex-col items-center ">
+      <div className="mt-20">
+        <WhoWeAre />
+        <MissionVision />
+
+        <WhyWeStandOut />
+      </div>
+
       {/* Header */}
-      <div className="w-full max-w-6xl px-6 mb-12 text-left mt-20">
+      {/* <div className="w-full max-w-6xl px-6 mb-12 text-left mt-20">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           About <span className="text-yellow-400">Hyper Media Frame</span>
         </h1>
@@ -16,11 +27,10 @@ export default function AboutUs() {
           defines credibility, we specialize in helping individuals and
           businesses stand out with a powerful and authentic digital identity.
         </p>
-      </div>
+      </div> */}
 
       {/* Hero Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl px-6 mb-20 items-center">
-        {/* Left: Image */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl px-6 mb-20 items-center mb-10">
         <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
             src={"./about.jpg"}
@@ -32,7 +42,6 @@ export default function AboutUs() {
           />
         </div>
 
-        {/* Right: Mission Statement */}
         <div className="space-y-6">
           <p className="text-gray-300 leading-relaxed">
             From optimizing IMDb pages and crafting authoritative Wikipedia
@@ -50,7 +59,7 @@ export default function AboutUs() {
             here to make sure yours is seen, heard, and remembered.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Why Choose Us */}
       {/* <div className="max-w-5xl px-6 mb-16 text-center">
@@ -85,10 +94,13 @@ export default function AboutUs() {
           </div>
         </div>
       </div> */}
-      <WhyChooseUs />
+      <div className="mb-10 w-full">
+        <WhyChooseUs />
+      </div>
+      <TestimonialsSection />
 
       {/* Contact Section */}
-      <div className="w-full bg-gray-800 py-12 px-6 text-center">
+      {/* <div className="w-full bg-muted/30 mt-10 py-12 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
           Let’s Build Your Digital Presence Together
         </h2>
@@ -128,7 +140,7 @@ export default function AboutUs() {
         <button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">
           Get Started Today
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

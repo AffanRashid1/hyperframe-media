@@ -18,6 +18,7 @@ import CountUp from "@/components/CountUp/CountUp";
 import StatsSection from "@/components/sections/stats-section";
 import SplashCursor from "@/components/SplashCursor/spplash-cursor";
 import Image from "next/image";
+import OurProcess from "@/components/sections/process";
 
 export default function HomePage() {
   const techLogos = [
@@ -81,14 +82,14 @@ export default function HomePage() {
       /> */}
       <ServicesSection />
       <StatsSection />
-
+      <OurProcess />
       <FeaturesSection />
       <div className="bg-muted/30 w-full">
         <Contact />
       </div>
 
       {/* <ComponentLibraryShowcase /> */}
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       {/* <PricingSection /> */}
       {/* <BlogSection /> */}
       {/* <FaqSection /> */}

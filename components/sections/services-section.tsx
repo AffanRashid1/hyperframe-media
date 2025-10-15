@@ -10,6 +10,8 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import AOS from "aos";
 import Image from "next/image";
+import EditorialPublishing from "./editorial-publishing";
+import PressReleaseDistribution from "./press-release";
 
 const servicesData = [
   {
@@ -191,6 +193,7 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         {/* <ParallaxScroll baseVelocity={0.2} direction="up" className="pt-12"> */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-4 pb-16">
           {servicesData.map((service, i) => (
             <div
@@ -234,6 +237,9 @@ const ServicesSection = () => {
           ))}
         </div>
         {/* </ParallaxScroll> */}
+
+        <EditorialPublishing />
+        <PressReleaseDistribution />
       </div>
     </section>
   );
